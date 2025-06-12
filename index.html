@@ -28,15 +28,17 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-
-      body {
+      * {
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
+      }
+      body {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
-       font-family: "Outfit", sans-serif;
+        font-family: "Outfit", sans-serif;
         background-color: hsl(227, 51%, 77%);
       }
 
@@ -68,6 +70,22 @@
         color: hsl(220, 15%, 55%);
         margin-top: 12px;
         padding: 0 20px 20px;
+      }
+
+      /* Responsive for larger desktop screens */
+      @media (min-width: 1024px) {
+        .QRContainer {
+          max-width: 360px;
+          padding: 1.5rem;
+        }
+
+        .QRContainerTitle {
+          font-size: 1.5rem;
+        }
+
+        .QRContainerContent {
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
